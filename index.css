@@ -67,11 +67,18 @@ p {
 }
 .contact img {
   display: block;
+  max-width: max-content;
 }
 
 .centerRight {
   margin-top: 15px;
   margin-left: 10%
+}
+
+@media (max-width: 650px) {
+  .centerRight {
+    margin-top: 15px;
+  }
 }
 
 .rotated {
@@ -94,7 +101,6 @@ p {
   color: #FF785A;
 }
 
-
 .experience {
   background-color: #FFF4EB;
   box-shadow: 0 0 10px #333;
@@ -106,7 +112,6 @@ p {
 h4.secondaryText {
   margin: 0px;
 }
-
 h3.secondaryText {
   margin: 2px;
   margin-top: 5px;
