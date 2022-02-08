@@ -29,6 +29,12 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 650px) {
+  .navItem {
+    font-size: 25px;
+  }
+}
+
 .headline {
   clear: both;
   margin-top: 140px;
@@ -78,6 +84,9 @@ p {
 @media (max-width: 650px) {
   .centerRight {
     margin-top: 15px;
+  }
+  .contact img{
+    width: 100%;
   }
 }
 
@@ -205,6 +214,44 @@ h3.secondaryText {
   align-items: center;
 }
 
+.grid {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.skill {
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+  width: 150px;
+  height: 40px;
+  border-radius: 16px;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  background-color: #E9EBEC;
+  margin-bottom: 20px;
+}
+.skill:hover {
+  box-shadow: 0 0 8px rgba(0,0,0,0.7);
+}
+.skill-last {
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+  width: 150px;
+  height: 40px;
+  border-radius: 16px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  background-color: #E9EBEC;
+  margin-bottom: 20px;
+}
+.skill-last:hover {
+  box-shadow: 0 0 8px rgba(0,0,0,0.7);
+}
+
 @media (min-width: 650px){
   h1 {
     display: inline;
@@ -212,45 +259,8 @@ h3.secondaryText {
   .navigation {
     float:right;
   }
-
-  .grid {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-  }
-
-  .skill {
-    box-shadow: 0 0 8px rgba(0,0,0,0.3);
-    width: 150px;
-    height: 40px;
-    border-radius: 16px;
-    margin-right: 10px;
-    margin-left: 10px;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 40px;
-    background-color: #E9EBEC;
-    margin-bottom: 20px;
-  }
-  .skill:hover {
-    box-shadow: 0 0 8px rgba(0,0,0,0.7);
-  }
-  .skill-last {
-    box-shadow: 0 0 8px rgba(0,0,0,0.3);
-    width: 150px;
-    height: 40px;
-    border-radius: 16px;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 40px;
-    background-color: #E9EBEC;
-    margin-bottom: 20px;
-  }
-  .skill-last:hover {
-    box-shadow: 0 0 8px rgba(0,0,0,0.7);
-  }
 }
+
 .overlay {
   position: fixed;
   top: 0;
