@@ -8,18 +8,19 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
+<title>Nuutti Henriksson</title>
 </head>
-<header>
-  <nav class="navigation">
-    <a class="navItem" onclick="scrolldiv('experience')">work experience</a>
-    <a class="navItem" onclick="scrolldiv('education')">education</a>
-    <a class="navItem" onclick="scrolldiv('projects')">projects</a>
-    <a class="navItem" onclick="scrolldiv('skills')">skills</a>
-  </nav>
-</header>
-<br>
 <body>
-  <div>
+  <header>
+    <nav class="navigation">
+      <a class="navItem" onclick="scrolldiv('experience')">work experience</a>
+      <a class="navItem" onclick="scrolldiv('education')">education</a>
+      <a class="navItem" onclick="scrolldiv('projects')">projects</a>
+      <a class="navItem" onclick="scrolldiv('skills')">skills</a>
+    </nav>
+  </header>
+  <br>
+  <section>
     <div class="headline">
       <h1>Hello, I am</h1> <h1 class="highlighted">Nuutti Henriksson</h1>
     </div>
@@ -35,34 +36,34 @@
     </div>
     <br>
     <div class="centerRight">
-      <button class="contact" onclick="location.href='#resume'"><img src="resumeButton.png"/></button>
-      <button class="contact" onclick="location.href='#number'"><img src="number.png"/></button>
-      <button class="contact" onclick="location.href='mailto:nuutti.henriksson@aalto.fi';"><img src="email.png"/></button>
-      <button class="contact" onclick="location.href='https://github.com/NuuttiHenriksson';"><img src="github.png"/></button>
-      <button class="contact" onclick="location.href='https://fi.linkedin.com/in/nuuttihenriksson';"><img src="linkedin.png" href="https://fi.linkedin.com/in/nuuttihenriksson"/></button>
+      <button class="contact" onclick="location.href='#resume'"><img src="resumeButton.png" alt="Resume"/></button>
+      <button class="contact" onclick="location.href='#number'"><img src="number.png" alt="Number"/></button>
+      <button class="contact" onclick="location.href='mailto:nuutti.henriksson@aalto.fi';"><img src="email.png" alt="Email"/></button>
+      <button class="contact" onclick="location.href='https://github.com/NuuttiHenriksson';"><img src="github.png" alt="GitHub"/></button>
+      <button class="contact" onclick="location.href='https://fi.linkedin.com/in/nuuttihenriksson';"><img src="linkedin.png" alt="Linkedin"/></button>
     </div>
-    <div id="number" class="overlay">
+    <article id="number" class="overlay">
       <div class="popup">
         <a class="close" href="#">&times;</a>
         <p>
           Phone: 040 000 0000
         </p>
       </div>
-    </div>
-    <div id="resume" class="overlay">
+    </article>
+    <article id="resume" class="overlay">
       <div class="popup">
         <a class="close" href="#">&times;</a>
-        <h1>Resume</h1>
-        <iframe src="resume.pdf" width="100%" height="600px"></iframe>
+        <h2>Resume</h2>
+        <iframe src="resume.pdf" width=100 height=600 id="resumeframe"></iframe>
       </div>
-    </div>
-  </div>
+    </article>
+  </section>
   <br>
   <br>
-  <div class="rotated">
+  <section class="rotated">
     <div class="background" id="experience">
       <h2 class="tertiaryText">Work experience</h2>
-      <div class="experience">
+      <article class="experience">
         <div class="experienceBox">
           <h3 class="secondaryText">Aalto Yliopisto</h3>
           <h4 class="secondaryText">Research assistant</h4>
@@ -73,9 +74,9 @@
             I also learned to take in large amounts of information as I joined the project after the start.
           </p>
         </div>
-      </div>
+      </article>
       <br>
-      <div class="experience">
+      <article class="experience">
         <div class="experienceBox">
           <h3 class="secondaryText" >Kiinteistöalan koulutuskeskus</h3>
           <h4 class="secondaryText">ICT trainee</h4>
@@ -86,11 +87,11 @@
             I also have a part time contract with the company to go help them out when ever I have time.
           </p>
         </div>
-      </div>
+      </article>
       <br>
       <br>
       <h2 class="tertiaryText" id="education">Education</h2>
-      <div class="experience">
+      <article class="experience">
         <div class="experienceBox">
           <h3 class="secondaryText">Aalto University - Bachelor's</h3>
           <h4 class="secondaryText">Computer Science</h4>
@@ -101,34 +102,34 @@
             I also have a part time contract with the company to go help them out when ever I have time.
           </p>
         </div>
-      </div>
+      </article>
       <br>
     </div>
     <br>
-  </div>
+  </section>
   <br>
   <h2 id="projects">Projects</h2>
-  <div class="projects">
+  <section class="projects">
     <a class="project" href="#listchainer">
       <h3 class="projectfont">ListChainer</h3>
-      <img class="projectimage" src="listchainer.png">
+      <img class="projectimage" src="listchainer.png" alt="listchainer">
     </a>
     <br>
     <a class="project" href="#awakeai">
       <h3 class="projectfont">awake ai - Port Controller</h3>
-      <img class="projectimage" src="awakeai.png">
+      <img class="projectimage" src="awakeai.png" alt="Port controller">
     </a>
     <br>
     <a class="project" href="#portfolio">
       <h3 class="projectfont">Portfolio</h3>
-      <img class="projectimage" src="portfolio.png">
+      <img class="projectimage" src="portfolio.png" alt="Portfolio">
     </a>
-  </div>
-  <div id="listchainer" class="overlay">
+  </section>
+  <article id="listchainer" class="overlay">
     <div class="popup">
       <a class="close" href="#projects">&times;</a>
       <h2>ListChainer</h2>
-      <img class="image" src="listchainer.png">
+      <img class="image" src="listchainer.png" alt="listchainer">
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
         dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -137,12 +138,12 @@
         publishing software like Aldus PageMaker including versions of Lorem Ipsum.
       </p>
     </div>
-  </div>
-  <div id="awakeai" class="overlay">
+  </article>
+  <article id="awakeai" class="overlay">
     <div class="popup">
       <a class="close" href="#projects">&times;</a>
       <h2>Awake.ai port configurator</h2>
-      <img class="image" src="awakeai.png">
+      <img class="image" src="awakeai.png" alt="Port controller">
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
         dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -151,12 +152,12 @@
         publishing software like Aldus PageMaker including versions of Lorem Ipsum.
       </p>
     </div>
-  </div>
-  <div id="portfolio" class="overlay">
+  </article>
+  <article id="portfolio" class="overlay">
     <div class="popup">
       <a class="close" href="#projects">&times;</a>
       <h2>Portfolio page</h2>
-      <img class="image" src="portfolio.png">
+      <img class="image" src="portfolio.png" alt="Portfolio">
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
         dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -165,48 +166,50 @@
         publishing software like Aldus PageMaker including versions of Lorem Ipsum.
       </p>
     </div>
-  </div>
+  </article>
   <br>
-  <h2 id="skills">Skills</h2>
-  <div class="container">
-    <div class="grid">
-      <div class="skill">Node.JS</div>
-      <div class="skill">JS</div>
-      <div class="skill">React</div>
-      <div class="skill">CSS</div>
-      <div class="skill">HTML</div>
+  <section>
+    <h2 id="skills">Skills</h2>
+    <div class="container">
+      <div class="grid">
+        <article class="skill">Node.JS</article>
+        <article class="skill">JS</article>
+        <article class="skill">React</article>
+        <article class="skill">CSS</article>
+        <article class="skill">HTML</article>
+      </div>
+      <div class="grid">
+        <article class="skill">Cypress</article>
+        <article class="skill">Material UI</article>
+        <article class="skill">Redux</article>
+        <article class="skill">Git</article>
+      </div>
+      <div class="grid">
+        <div class="skill">C</div>
+        <div class="skill">C++</div>
+        <div class="skill">Scala</div>
+        <div class="skill">TypeScript</div>
+        <div class="skill">SQL</div>
+      </div>
+      <br>
+      <div class="grid">
+        <div class="skill">Swedish</div>
+        <div class="skill">Finnish</div>
+        <div class="skill">English</div>
+      </div>
     </div>
-    <div class="grid">
-      <div class="skill">Cypress</div>
-      <div class="skill">Material UI</div>
-      <div class="skill">Redux</div>
-      <div class="skill">Git</div>
-    </div>
-    <div class="grid">
-      <div class="skill">C</div>
-      <div class="skill">C++</div>
-      <div class="skill">Scala</div>
-      <div class="skill">TypeScript</div>
-      <div class="skill">SQL</div>
-    </div>
-    <br>
-    <div class="grid">
-      <div class="skill">Swedish</div>
-      <div class="skill">Finnish</div>
-      <div class="skill">English</div>
-    </div>
-  </div>
+  </section>
   <br>
   <br>
-  <p>
+  <footer>
     Nuutti Henriksson 2022
-  </p>
+  </footer>
+  <script>
+    function scrolldiv(id) {
+        var elem = document.getElementById(id);
+        elem.scrollIntoView();
+    }
+  </script>
 </body>
-<script>
-  function scrolldiv(id) {
-      var elem = document.getElementById(id);
-      elem.scrollIntoView();
-  }
-</script>
 </html>
 
