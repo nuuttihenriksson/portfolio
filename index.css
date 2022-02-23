@@ -17,6 +17,7 @@ body {
   color: #483343;
   text-align: center;
   margin: 0px !important;
+  position: absolute;
 }
 
 .navigation {
@@ -25,7 +26,7 @@ body {
 
 .navItem {
   margin-right: 1vw;
-  font-size: 15px;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -36,9 +37,6 @@ body {
   .navigation {
     float:right;
   }
-  .navItem {
-    font-size: 20px;
-  }
 }
 
 .headline {
@@ -46,6 +44,16 @@ body {
   margin-top: 140px;
   font-weight: 700;
   line-height: 20px;
+}
+
+@media (max-width: 650px) {
+  .navItem {
+    font-size: 13px;
+    text-decoration: underline;
+  }
+  .headline {
+    margin-top: 50px;
+  }
 }
 
 .highlighted {
@@ -254,6 +262,7 @@ h3.secondaryText {
   background: rgba(0, 0, 0, 0.6);
   visibility: hidden;
   opacity: 0;
+  z-index: 10;
 }
 .overlay:target {
   visibility: visible;
@@ -271,6 +280,7 @@ h3.secondaryText {
   width: 50%;
   position: relative;
   transition: all 5s ease-in-out;
+  z-index: 10;
 }
 .popup .close {
   position: absolute;
@@ -285,6 +295,10 @@ h3.secondaryText {
 .popup .content {
   max-height: 30%;
   overflow: auto;
+}
+
+#resume.popup {
+  overflow-y: scroll;
 }
 
 @media (max-width: 650px) {
