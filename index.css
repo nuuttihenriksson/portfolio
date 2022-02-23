@@ -25,13 +25,19 @@ body {
 
 .navItem {
   margin-right: 1vw;
-  font-size: 20px;
+  font-size: 15px;
   cursor: pointer;
 }
 
-@media (max-width: 650px) {
+@media (min-width: 650px){
+  h1 {
+    display: inline;
+  }
+  .navigation {
+    float:right;
+  }
   .navItem {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
@@ -219,6 +225,7 @@ h3.secondaryText {
   justify-content: center;
   justify-items: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 .skill {
@@ -236,29 +243,6 @@ h3.secondaryText {
 }
 .skill:hover {
   box-shadow: 0 0 8px rgba(0,0,0,0.7);
-}
-.skill-last {
-  box-shadow: 0 0 8px rgba(0,0,0,0.3);
-  width: 150px;
-  height: 40px;
-  border-radius: 16px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 40px;
-  background-color: #E9EBEC;
-  margin-bottom: 20px;
-}
-.skill-last:hover {
-  box-shadow: 0 0 8px rgba(0,0,0,0.7);
-}
-
-@media (min-width: 650px){
-  h1 {
-    display: inline;
-  }
-  .navigation {
-    float:right;
-  }
 }
 
 .overlay {
@@ -309,8 +293,8 @@ h3.secondaryText {
     padding: 20px;
     background: #fff;
     border-radius: 5px;
-    width: 90%;
-    max-height: 50%;
+    width: 85%;
+    max-height: 70%;
     overflow-y: scroll;
   }
   .popup h2 {
@@ -318,9 +302,10 @@ h3.secondaryText {
   }
   .popup p {
     font-size: 15px;
+    width: 100%;
   }
-  .popup img {
-    max-width: 80%;
+  .popup .image {
+    width: 100%;
   }
 }
 
@@ -331,13 +316,13 @@ h3.secondaryText {
     background: #fff;
     border-radius: 5px;
     width: 80%;
-    max-height: 70%;
+    max-height: 80%;
     overflow-y: scroll;
   }
   .popup h2 {
     font-size: 30px;
   }
   .popup img {
-    max-width: 60%;
+    width: 70%;
   }
 }
